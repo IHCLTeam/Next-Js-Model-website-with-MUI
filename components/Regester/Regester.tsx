@@ -1,8 +1,11 @@
+import { Grid } from '@mui/material'
 import React from 'react'
 
 function Regester() {
   return (
-    <div>Regester</div>
+    <Grid>
+        Regester Here
+    </Grid>
   )
 }
 
