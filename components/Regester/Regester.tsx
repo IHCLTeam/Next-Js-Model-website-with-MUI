@@ -4,7 +4,7 @@ import React from 'react'
 function Regester() {
   return (
     <Grid>
-        Regester Here
+        Regester
     </Grid>
   )
 }

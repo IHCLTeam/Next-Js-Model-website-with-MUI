@@ -4,7 +4,7 @@ import React from 'react'
 function Login() {
   return (
     <Grid>
-        Login Here
+        Login
     </Grid>
   )
 }
