@@ -1,15 +1,22 @@
-import type { NextPage } from 'next'
-import Footer from '../components/Footer'
-import Layout from '../components/Layout'
-import styles from '../styles/Home.module.css'
+import { Grid } from "@mui/material";
+import type { NextPage } from "next";
+import Blog from "../components/Body/Blog";
+import Content from "../components/Body/Content";
+import Header from "../components/Body/Header";
+import Footer from "../components/Layout/Footer";
+import NavBar from "../components/Layout/NavBar";
 
 const Home: NextPage = () => {
+  console.log("hey");
   return (
-    <div className={styles.container}>
-      <Layout /> 
+    <Grid>
+      <NavBar />
+      <Header />
+      <Content />
+      <Blog />
       <Footer />
-    </div>
-  )
-}
+    </Grid>
+  );
+};
 
-export default Home
+export default Home;

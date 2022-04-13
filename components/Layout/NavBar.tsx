@@ -2,10 +2,9 @@ import { Typography, Grid, Button } from "@mui/material";
 import Head from "next/head";
 import React from "react";
 import Image from "next/image";
-import imageLoader from "../pages/ImageLoader";
+import imageLoader from "../../pages/ImageLoader";
 
-
-function Layout() {
+function NavBar() {
   return (
     <Grid>
       <Head>
@@ -25,10 +24,10 @@ function Layout() {
         <Typography>
           <Image
             loader={imageLoader}
-            src="https://i1.lmsin.net/website_images/in/logos/logo-homecentre.svg"
+            src="https://s26352.pcdn.co/wp-content/themes/tt2/assets/images/logo-tt-full.svg"
             alt="Picture of the author"
-            width={130}
-            height={34}
+            width={180}
+            height={38}
           />
         </Typography>
 
@@ -37,7 +36,7 @@ function Layout() {
             sx={{
               color: "#000",
               backgroundColor: "#0f448a",
-              marginRight: "2px",
+              marginRight: "6px",
               fontFamily: "CaliforniaPalmsScript",
             }}
           >
@@ -47,7 +46,7 @@ function Layout() {
             sx={{
               color: "#000",
               backgroundColor: "#0f448a",
-              marginRight: "2px",
+              marginRight: "6px",
               fontFamily: "CaliforniaPalmsScript",
             }}
           >
@@ -59,4 +58,4 @@ function Layout() {
   );
 }
 
-export default Layout;
+export default NavBar;
