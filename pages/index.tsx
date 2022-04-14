@@ -5,6 +5,7 @@ import Content from "../components/Body/Content";
 import Header from "../components/Body/Header";
 import Footer from "../components/Layout/Footer";
 import NavBar from "../components/Layout/NavBar";
+import BasicModal from "../components/modalPopup";
 
 const Home: NextPage = () => {
   console.log("hey");
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
       <Content />
       <Blog />
       <Footer />
+    
     </Grid>
   );
 };

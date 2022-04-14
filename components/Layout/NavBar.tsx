@@ -3,6 +3,7 @@ import Head from "next/head";
 import React from "react";
 import Image from "next/image";
 import imageLoader from "../../pages/ImageLoader";
+import BasicModal from "../modalPopup";
 
 function NavBar() {
   return (
@@ -42,16 +43,7 @@ function NavBar() {
           >
             Regester
           </Button>
-          <Button
-            sx={{
-              color: "#000",
-              backgroundColor: "#0f448a",
-              marginRight: "6px",
-              fontFamily: "CaliforniaPalmsScript",
-            }}
-          >
-            Login
-          </Button>
+          <BasicModal/>
         </Typography>
       </Grid>
     </Grid>
