@@ -3,7 +3,9 @@ import Head from "next/head";
 import React from "react";
 import Image from "next/image";
 import imageLoader from "../../pages/ImageLoader";
-import BasicModal from "../modalPopup";
+import BasicModal from "../modalpops/modalPopup";
+
+
 
 function NavBar() {
   return (
@@ -32,20 +34,28 @@ function NavBar() {
           />
         </Typography>
 
-        <Typography>
-          <Button
-            sx={{
+
+        <Grid sx={{ display: "flex" }}>
+
+          <Typography>
+            <Button sx={{
               color: "#000",
               backgroundColor: "#0f448a",
               marginRight: "6px",
               fontFamily: "CaliforniaPalmsScript",
-            }}
-          >
-            Regester
-          </Button>
-          <BasicModal/>
-        </Typography>
+            }}>
+              Regester
+            </Button>
+          </Typography>
+
+          <BasicModal />
+        </Grid>
+
+
       </Grid>
+
+
+
     </Grid>
   );
 }

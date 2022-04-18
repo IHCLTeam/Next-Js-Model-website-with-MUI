@@ -1,6 +1,7 @@
-import { Button, Grid, Typography } from "@mui/material";
+import { Button, Grid, Link, Typography } from "@mui/material";
 import { Box, height } from "@mui/system";
 import React from "react";
+import ContactModal from "../modalpops/modalpop3";
 
 const styles = {
   paperContainer: {
@@ -9,7 +10,7 @@ const styles = {
     outerWidth: 100,
   },
 };
-function Blog() {
+export default function Blog() {
   return (
     <Box style={styles.paperContainer}>
       .
@@ -30,10 +31,10 @@ function Blog() {
           Master TT software with our expansive collection of documentation,
           tutorials and training videos
         </Typography>
-        <Button sx={{ backgroundColor: "none" }}>Contact Us</Button>
+        <Link href="/components/contact" >Contact Us</Link>
+        {/* <ContactModal/> */}
       </Grid>
     </Box>
   );
 }
 
-export default Blog;

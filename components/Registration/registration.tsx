@@ -58,6 +58,7 @@ export default function Registration() {
                     }}
                 >
                     <Typography >
+
                         <Avatar sx={{ m: 1 }} >
                             <LockOutlinedIcon />
                         </Avatar>
@@ -67,22 +68,12 @@ export default function Registration() {
                     </Typography>
                     <Box component="form" noValidate onSubmit={handleSubmit} >
                         <Grid container spacing={2}>
-                            <Grid item sm={9}>
-                                <TextField
-                                    required
-                                    fullWidth
-                                    id="fullname"
-                                    label="firstName"
-                                    name="FirstName"
-                                    autoComplete="email"
-                                />
-                            </Grid>
                             <Grid item xs={12} sm={9}>
                                 <TextField
                                     required
                                     fullWidth
                                     id="fullname"
-                                    label="lastName"
+                                    label="LastName"
                                     name="LastName"
                                     autoComplete="lastname"
                                 />
@@ -119,7 +110,16 @@ export default function Registration() {
                                     autoComplete="confrompassword"
                                 />
                             </Grid>
-
+                            <Grid item xs={12} sm={9}>
+                                <TextField
+                                    required
+                                    fullWidth
+                                    id="contactnumber"
+                                    label="phoneNumber"
+                                    name="phoneNumber"
+                                    autoComplete="phoneNumber"
+                                />
+                            </Grid>
                             <Grid item xs={12} sm={9}>
                                 <FormControlLabel
                                     control={<Checkbox value="allowExtraEmails" color="primary" />}
@@ -133,7 +133,7 @@ export default function Registration() {
                                 type="submit"
                                 fullWidth
                                 variant="contained"
-                                sx={{ mb: 2, width:300 }}
+                                sx={{ mb: 2, width: 300 }}
                             >
                                 SignIn
                             </Button>
@@ -141,7 +141,7 @@ export default function Registration() {
                         <Grid container justifyContent="flex-end">
                             <Grid item sm={10}>
                                 Already have an account?
-                                <Link href="/components/Login/loginpge">
+                                <Link href='/'>
                                     <a >Login</a>
                                 </Link>
                             </Grid>

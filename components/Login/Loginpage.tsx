@@ -10,6 +10,7 @@ import Box from '@mui/material/Box';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import BasicModal2 from '../modalpops/modalpop2';
 
 
 
@@ -101,16 +102,16 @@ export default function LoginPage() {
                                 type="submit"
                                 fullWidth
                                 variant="contained"
-                                sx={{ mb: 2, marginLeft: 4 }}
+                                sx={{ mb: 1, width:300}}
                             >
                                 LogIn
                             </Button>
                         </Grid>
                         <Grid container justifyContent="flex-end">
-                            <Grid item sm={10}>
-                                Dont have an account?
-                                <Link href="/" variant="body2">
-                                    <a >SignUp</a>
+                            <Grid item sm={10} sx={{display:'Flex'}}>
+                                Dont have an account? <BasicModal2/>
+                                <Link href="/registration" variant="body2">
+                                   
                                 </Link>
                             </Grid>
                         </Grid>
