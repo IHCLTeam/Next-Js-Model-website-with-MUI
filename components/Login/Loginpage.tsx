@@ -19,7 +19,7 @@ function Copyright(props: any) {
     return (
         <Typography variant="body2" color="text.secondary" align="center" {...props}>
             Copyright ©
-            <Link color="inherit" href="https://mui.com/">
+            <Link color="inherit" href="/">
                 Your Website
             </Link>
             {new Date().getFullYear()}
@@ -92,7 +92,7 @@ export default function LoginPage() {
                             <Grid item xs={12} sm={9}>
                                 <FormControlLabel
                                     control={<Checkbox value="allowExtraEmails" color="primary" />}
-                                    label="confrom details"
+                                    label="accept Terms and conditions"
                                 />
                             </Grid>
                         </Grid>

@@ -7,7 +7,6 @@ import Footer from "../components/Layout/Footer";
 import NavBar from "../components/Layout/NavBar";
 
 const Home: NextPage = () => {
-  console.log("hey");
   return (
     <Grid>
       <NavBar />

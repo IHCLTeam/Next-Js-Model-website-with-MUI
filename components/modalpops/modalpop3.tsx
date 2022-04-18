@@ -4,7 +4,8 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import Registration from '../Registration/registration';
-import Contact from '../contact';
+import Contactus from '../Contact';
+
 
 
 const style = {
@@ -35,7 +36,7 @@ export default function ContactModal() {
             >
                 <Box sx={style} >
                     <Typography id="modal-modal-title" variant="h6" component="h2">
-                        <Contact/>
+                        <Contactus/>
                     </Typography>
                 </Box>
             </Modal>

@@ -4,7 +4,6 @@ import { Console } from "console";
 import React from "react";
 
 function Header() {
-  console.log("hello");
   return (
     <Grid>
       <Box zIndex="tooltip" sx={{ textAlign: "center" }}>
