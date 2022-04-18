@@ -1,21 +1,19 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Modal from '@mui/material/Modal';
-import LoginPage from '../Login/Loginpage';
-
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import Modal from "@mui/material/Modal";
+import LoginPage from "../Login/Loginpage";
+import React from "react";
 
 const style = {
-  position: 'absolute' as 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
+  position: "absolute" as "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
   width: 400,
   outerHeight: 400,
-  bgcolor: 'background.paper',
+  bgcolor: "background.paper",
   boxShadow: 24,
-
 };
 
 export default function BasicModal() {
@@ -25,7 +23,9 @@ export default function BasicModal() {
 
   return (
     <div>
-      <Button className='booksign' onClick={handleOpen}>Login</Button>
+      <Button className="booksign" onClick={handleOpen}>
+        Login
+      </Button>
       <Modal
         open={open}
         onClose={handleClose}
@@ -34,7 +34,7 @@ export default function BasicModal() {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-          <LoginPage/>
+            <LoginPage />
           </Typography>
         </Box>
       </Modal>

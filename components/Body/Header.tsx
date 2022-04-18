@@ -1,6 +1,4 @@
 import { Box, Grid, Typography } from "@mui/material";
-import { color } from "@mui/system";
-import { Console } from "console";
 import React from "react";
 
 function Header() {
@@ -10,21 +8,11 @@ function Header() {
         <Box
           zIndex="modal"
           style={{ height: 0, width: "100%", position: "absolute" }}
-          top={"25%"}
+          top={"20%"}
         >
           <Typography variant="h3" sx={{ color: "white" }}>
             ENTERPRISE SOLUTIONS FOR FUTURES TRADING, <br />
             INFRASTRUCTURE AND DATA.
-            <br />
-            <br />
-          </Typography>
-
-          <Typography variant="h5" sx={{ color: "white" }}>
-            Utilize our technology as the end-to-end foundation for your futures
-            trading business.
-            <br />
-            <br />
-            <br />
           </Typography>
         </Box>
 

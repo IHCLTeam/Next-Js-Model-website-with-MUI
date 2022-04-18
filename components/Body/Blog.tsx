@@ -1,6 +1,5 @@
-import { Button, Grid, Link, Typography } from "@mui/material";
-import { Box, height } from "@mui/system";
-import React from "react";
+import { Grid,Typography } from "@mui/material";
+import { Box } from "@mui/system";
 import ContactModal from "../modalpops/modalpop3";
 
 const styles = {
@@ -28,11 +27,11 @@ export default function Blog() {
       >
         <Typography variant="h4">HELP LIBRARY</Typography>
         <Typography>
-          Master TT software with our expansive collection of documentation,
+          Master IT software with our expansive collection of documentation,
           tutorials and training videos
         </Typography>
-        <Link href="/components/contact" >Contact Us</Link>
-        {/* <ContactModal/> */}
+        {/* <Link href="/components/contact">Contact Us</Link> */}
+        <ContactModal/>
       </Grid>
     </Box>
   );

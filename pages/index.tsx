@@ -14,7 +14,6 @@ const Home: NextPage = () => {
       <Content />
       <Blog />
       <Footer />
-     
     </Grid>
   );
 };

@@ -3,8 +3,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-import Registration from '../Registration/registration';
-import Contactus from '../Contact';
+import Contactus from '../contact'; 
 
 
 
