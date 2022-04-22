@@ -150,8 +150,8 @@ export default function Registration() {
           <Grid>
             <Typography
               sx={{
+                width: 120,
                 border: 1,
-                width: "40%",
                 borderRadius: "999px",
                 textAlign: "center",
                 borderColor: "blue",

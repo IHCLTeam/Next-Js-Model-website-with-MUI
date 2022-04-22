@@ -45,8 +45,6 @@ export default function LoginPage() {
     console.log({
       email: data.get("email"),
       password: data.get("password"),
-      firstName: data.get("firstName"),
-      lastName: data.get("lastName"),
     });
   };
 
@@ -83,7 +81,7 @@ export default function LoginPage() {
           <Typography
             component="h1"
             variant="h5"
-            sx={{ marginTop: "2%", marginLeft: 97, marginBottom: "1%" }}
+            sx={{ marginTop: "2%", marginLeft: '41%', marginBottom: "1%" }}
           >
             LogIn
           </Typography>
@@ -94,9 +92,10 @@ export default function LoginPage() {
             item
             xs={4}
             sm={2}
-            sx={{ marginLeft: "40%", marginBottom: "1%" }}
+            sx={{ marginLeft: "40%", marginBottom: "1%", width: 310 }}
           >
             <TextField
+            sx= {{ width: 310 }}
               required
               fullWidth
               id="email"
@@ -106,8 +105,9 @@ export default function LoginPage() {
             />
           </Grid>
 
-          <Grid item sm={2} sx={{ marginLeft: "40%" }}>
+          <Grid item sm={2} sx={{ marginLeft: "40%"}}>
             <TextField
+            sx= {{ width: 310 }}
               required
               fullWidth
               name="password"
@@ -129,7 +129,7 @@ export default function LoginPage() {
             type="submit"
             fullWidth
             variant="contained"
-            sx={{ mb: 1, width: 310, marginLeft: 97 }}
+            sx={{ mb: 1, width: 310, marginLeft: '40%' }}
           >
             LogIn
           </Button>
@@ -139,7 +139,7 @@ export default function LoginPage() {
           sm={10}
           sx={{
             display: "Flex",
-            marginLeft: 97,
+            marginLeft: '40%',
             marginBottom: "12%",
             fontSize: 20,
           }}
