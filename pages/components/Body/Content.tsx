@@ -1,8 +1,8 @@
 import React from "react";
-import imageLoader from "../../pages/ImageLoader";
 import Image from "next/image";
 import { Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
+import imageLoader from "../../ImageLoader";
 
 function Content() {
   return (

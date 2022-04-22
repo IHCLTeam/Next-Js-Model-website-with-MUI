@@ -2,9 +2,7 @@ import { Typography, Grid, Button } from "@mui/material";
 import Head from "next/head";
 import React from "react";
 import Image from "next/image";
-import imageLoader from "../../pages/ImageLoader";
-import BasicModal from "../modalpops/modalPopup";
-import BasicModal2 from "../modalpops/modalpop2";
+import imageLoader from "../../ImageLoader";
 import Link from "next/link";
 
 function NavBar() {
@@ -35,9 +33,12 @@ function NavBar() {
         </Typography>
 
         <Grid sx={{ display: "flex" }}>
-          <Typography>{/* <BasicModal2/> */}</Typography>
-
-          <BasicModal />
+        <Link href="/components/Registration/registration">
+            <Button>Register</Button>
+          </Link>
+          <Link href="/components/Login/Loginpage">
+            <Button>Login</Button>
+          </Link>
         </Grid>
       </Grid>
     </Grid>

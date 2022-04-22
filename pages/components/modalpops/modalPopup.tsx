@@ -5,28 +5,34 @@ import Modal from "@mui/material/Modal";
 import LoginPage from "../Login/Loginpage";
 import React from "react";
 
-const style = {
-  position: "absolute" as "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: 400,
-  outerHeight: 400,
-  bgcolor: "background.paper",
-  boxShadow: 24,
-};
+// const style = {
+//   position: "absolute" as "absolute",
+//   top: "50%",
+//   left: "50%",
+//   transform: "translate(-50%, -50%)",
+//   width: 400,
+//   outerHeight: 400,
+//   bgcolor: "background.paper",
+//   boxShadow: 24,
+// };
 
 export default function BasicModal() {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  // const [open, setOpen] = React.useState(false);
+  // const handleOpen = () => setOpen(true);
+  // const handleClose = () => setOpen(false);
 
   return (
     <div>
-      <Button className="booksign" onClick={handleOpen}>
+      
+      {/* <Button className="booksign" onClick={handleOpen}> */}
+
+      <Button>
         Login
       </Button>
-      <Modal
+
+
+
+      {/* <Modal
         open={open}
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
@@ -37,7 +43,9 @@ export default function BasicModal() {
             <LoginPage />
           </Typography>
         </Box>
-      </Modal>
+      </Modal> */}
+
+
     </div>
   );
 }
