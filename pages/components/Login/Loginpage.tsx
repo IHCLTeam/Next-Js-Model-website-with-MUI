@@ -118,7 +118,7 @@ export default function LoginPage() {
             />
           </Grid>
           <Grid item sm={8} sx={{ marginBottom: "1%", marginLeft: "40%" }}>
-            <Link href="/" sx={{ textDecoration: "none" }}>
+            <Link href="\components\Login\ForgotPassword" sx={{ textDecoration: "none" }}>
               Forgot Password?
             </Link>
           </Grid>
