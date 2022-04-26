@@ -1,38 +1,37 @@
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
-import { Box, styled, Paper } from "@mui/material";
+import { Box } from "@mui/material";
 import Link from "@mui/material/Link";
 import Image from "next/image";
 import imageLoader from "../../ImageLoader";
 import Grid from "@mui/material/Grid";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { createTheme } from "@mui/material/styles";
+import Paper from "@mui/material/Paper";
+import { styled } from "@mui/material/styles";
 
-const Item = styled(Paper)(({ theme }) => ({
+const StyledPaper = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
-  padding: theme.spacing(1),
-  color: theme.palette.text.secondary,
+  width: 300,
+  textAlign: "center",
+  boxShadow: "none",
 }));
 
 function Copyright(props: any) {
   return (
-    <Box>
-      <Grid>
-        <Item sx={{ textAlign: "center", boxShadow: "none", borderTop: 1 }}>
-          * By logging in, you agree to our Terms of Use and to receive our
-          emails and updates and acknowledge that you read our Privacy Policy.
-        </Item>
-        <Item sx={{ textAlign: "center", boxShadow: "none" }}>
-          This site is protected by reCAPTCHA Enterprise and the Google Privacy
-          Policy And Terms of Use apply
-        </Item>
-        <Item sx={{ textAlign: "center", boxShadow: "none" }}>
-          {new Date().getFullYear()}.
-        </Item>
-      </Grid>
-    </Box>
+    <Grid sx={{ mt: 25, mx: "auto", maxWidth: "60%", textAlign: "center" }}>
+      <Typography sx={{ borderTop: 1 }}>
+        * By logging in, you agree to our Terms of Use and to receive our emails
+        and updates and acknowledge that you read our Privacy Policy.
+      </Typography>
+      <Typography>
+        This site is protected by reCAPTCHA Enterprise and the Google Privacy
+        Policy And Terms of Use apply
+      </Typography>
+      <Typography>{new Date().getFullYear()}.</Typography>
+    </Grid>
   );
 }
 
@@ -63,7 +62,6 @@ export default function LoginPage() {
           </Button>
         </Link>
       </Typography>
-
       <Box
         sx={{
           display: "flex",
@@ -71,31 +69,24 @@ export default function LoginPage() {
           alignItems: "center",
         }}
       >
-        <Avatar sx={{ m: 4 }}>
-          <LockOutlinedIcon />
-        </Avatar>
+        <StyledPaper>
+          <Avatar sx={{ my: 4, mx: "auto" }}>
+            <LockOutlinedIcon />
+          </Avatar>
+        </StyledPaper>
       </Box>
 
       <Box component="form" noValidate onSubmit={handleSubmit}>
-        <Grid>
-          <Typography
-            component="h1"
-            variant="h5"
-            sx={{ marginTop: "2%", marginLeft: '41%', marginBottom: "1%" }}
-          >
+        <StyledPaper sx={{ my: 1, mx: "auto" }}>
+          <Typography component="h1" variant="h5">
             LogIn
           </Typography>
-        </Grid>
+        </StyledPaper>
 
-        <Grid container spacing={2}>
-          <Grid
-            item
-            xs={4}
-            sm={2}
-            sx={{ marginLeft: "40%", marginBottom: "1%", width: 310 }}
-          >
+        <StyledPaper sx={{ my: 2, mx: "auto" }}>
+          <StyledPaper sx={{ my: 3, mx: "auto" }}>
             <TextField
-            sx= {{ width: 310 }}
+              sx={{ width: 310 }}
               required
               fullWidth
               id="email"
@@ -103,11 +94,11 @@ export default function LoginPage() {
               name="email"
               autoComplete="email"
             />
-          </Grid>
+          </StyledPaper>
 
-          <Grid item sm={2} sx={{ marginLeft: "40%"}}>
+          <StyledPaper sx={{ my: 1, mx: "auto" }}>
             <TextField
-            sx= {{ width: 310 }}
+              sx={{ width: 310 }}
               required
               fullWidth
               name="password"
@@ -116,43 +107,38 @@ export default function LoginPage() {
               id="password"
               autoComplete="new-password"
             />
-          </Grid>
-          <Grid item sm={8} sx={{ marginBottom: "1%", marginLeft: "40%" }}>
-            <Link href="\components\Login\ForgotPassword" sx={{ textDecoration: "none" }}>
+          </StyledPaper>
+          <StyledPaper sx={{ my: 1, mx: "auto" }}>
+            <Link
+              href="/components/Login/ForgotPassword"
+              sx={{ textDecoration: "none" }}
+            >
               Forgot Password?
             </Link>
-          </Grid>
-        </Grid>
+          </StyledPaper>
+        </StyledPaper>
 
-        <Grid sm={9}>
-          <Button
-            type="submit"
-            fullWidth
-            variant="contained"
-            sx={{ mb: 1, width: 310, marginLeft: '40%' }}
-          >
+        <StyledPaper sx={{ my: 1, mx: "auto" }}>
+          <Button type="submit" variant="contained" sx={{ width: 300 }}>
             LogIn
           </Button>
-        </Grid>
-        <Grid
-          item
-          sm={10}
+        </StyledPaper>
+        <StyledPaper
           sx={{
-            display: "Flex",
-            marginLeft: '40%',
-            marginBottom: "12%",
             fontSize: 20,
+            my: 2,
+            mx: "auto",
           }}
         >
           Dont have an account?
           <Link
-            href="\components\Registration\registration"
+            href="/components/Registration/registration"
             variant="body2"
-            sx={{ fontSize: 20 }}
+            sx={{ fontSize: 18 }}
           >
             Sign In
           </Link>
-        </Grid>
+        </StyledPaper>
       </Box>
       <Copyright />
     </Grid>

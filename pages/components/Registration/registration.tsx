@@ -11,15 +11,9 @@ import TextField from "@mui/material/TextField";
 
 const StyledPaper = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-  maxWidth: 260,
+  maxWidth: 600,
   textAlign: "center",
   boxShadow: "none",
-}));
-
-const Item = styled(Paper)(({ theme }) => ({
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  color: theme.palette.text.secondary,
 }));
 
 const styles = {
@@ -32,21 +26,19 @@ const styles = {
 
 function Copyright(props: any) {
   return (
-    <Box>
-      <Grid>
-        <Item sx={{ textAlign: "center", boxShadow: "none", borderTop: 1 }}>
-          * By signing up, you agree to our Terms of Use and to receive Our
-          emails and updates and acknowledge that you read our Privacy Policy.
-        </Item>
-        <Item sx={{ textAlign: "center", boxShadow: "none" }}>
-          This site is protected by reCAPTCHA Enterprise and the Google Privacy
-          Policy And Terms of Use apply
-        </Item>
-        <Item sx={{ textAlign: "center", boxShadow: "none" }}>
-          {new Date().getFullYear()}.
-        </Item>
-      </Grid>
-    </Box>
+    <Grid sx={{ mx: "auto", maxWidth: "60%", textAlign: "center" }}>
+      <Typography sx={{ textAlign: "center", boxShadow: "none", borderTop: 1 }}>
+        * By signing up, you agree to our Terms of Use and to receive Our emails
+        and updates and acknowledge that you read our Privacy Policy.
+      </Typography>
+      <Typography sx={{ textAlign: "center", boxShadow: "none" }}>
+        This site is protected by reCAPTCHA Enterprise and the Google Privacy
+        Policy And Terms of Use apply
+      </Typography>
+      <Typography sx={{ textAlign: "center", boxShadow: "none" }}>
+        {new Date().getFullYear()}.
+      </Typography>
+    </Grid>
   );
 }
 
@@ -65,12 +57,18 @@ export default function Registration() {
   return (
     <Box style={styles.paperContainer}>
       <Grid>
-        <Typography
-          width={64}
-          sx={{ marginTop: "2px", marginLeft: "2px" }}
-        >
+        <Typography width={64} sx={{ marginTop: "2px", marginLeft: "2px" }}>
           <Link href="/">
-            <Button sx ={{color : 'black',fontFamily : 'revert',fontWeight :'bold',fontSize : '100%'}}>Home</Button>
+            <Button
+              sx={{
+                color: "black",
+                fontFamily: "revert",
+                fontWeight: "bold",
+                fontSize: "100%",
+              }}
+            >
+              Home
+            </Button>
           </Link>
         </Typography>
 
@@ -253,9 +251,7 @@ export default function Registration() {
           </Grid>
         </Grid>
       </Grid>
-      <Grid>
-        <Copyright />
-      </Grid>
+      <Copyright />
     </Box>
   );
 }

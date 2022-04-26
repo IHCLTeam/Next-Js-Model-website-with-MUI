@@ -3,7 +3,6 @@ import imageLoader from "../../ImageLoader";
 import Image from "next/image";
 import * as React from "react";
 import Grid from "@mui/material/Grid";
-import { autoAction } from "mobx/dist/internal";
 
 const styles = {
   paperContainer: {
@@ -23,18 +22,17 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function Footer() {
   return (
-    <Box sx={{ background: "black" ,color : 'white'}}>
-      <Grid>
-      </Grid>
+    <Box sx={{ background: "black", color: "white" }}>
+      <Grid></Grid>
       <Grid container spacing={2} sx={{ borderTop: 1, color: "white" }}>
         <Grid item xs={8}>
-          <Item sx={{ boxShadow: "none"}}>
+          <Item sx={{ boxShadow: "none" }}>
             <Image
               loader={imageLoader}
-              src="https://s26352.pcdn.co/wp-content/themes/tt2/assets/images/logo-tt-full.svg"
+              src="https://us.123rf.com/450wm/sitiardi21/sitiardi211701/sitiardi21170100013/70276178-hotel-reflection-logo.jpg?ver=6"
               alt="Picture of the author"
-              width={180}
-              height={38}
+              width={90}
+              height={60}
             />
           </Item>
         </Grid>
@@ -44,7 +42,7 @@ function Footer() {
               boxShadow: "none",
               textAlign: "center",
               color: "white",
-              marginLeft : '18%'
+              marginLeft: "18%",
             }}
           >
             {/* <svg
@@ -90,41 +88,41 @@ function Footer() {
                 d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
               ></path>
             </svg> */}
-           
-            <Image 
-            loader={imageLoader}
-            src = 'https://www.tata.com/content/dam/tata/images/footer/FB.svg'
-            alt="image not found"
-            width = {'65%'}
-            height = '32%'
+
+            <Image
+              loader={imageLoader}
+              src="https://www.tata.com/content/dam/tata/images/footer/FB.svg"
+              alt="image not found"
+              width={"65%"}
+              height="32%"
             />
-            <Image 
-            loader={imageLoader}
-            src = 'https://www.tata.com/content/dam/tata/images/footer/Linkedin.svg'
-            alt="image not found"
-            width = {'65%'}
-            height = '32%'
+            <Image
+              loader={imageLoader}
+              src="https://www.tata.com/content/dam/tata/images/footer/Linkedin.svg"
+              alt="image not found"
+              width={"65%"}
+              height="32%"
             />
-            <Image 
-            loader={imageLoader}
-            src = 'https://www.tata.com/content/dam/tata/images/footer/twitter_icon.svg'
-            alt="image not found"
-            width = {'65%'}
-            height = '30%'
+            <Image
+              loader={imageLoader}
+              src="https://www.tata.com/content/dam/tata/images/footer/twitter_icon.svg"
+              alt="image not found"
+              width={"65%"}
+              height="30%"
             />
-            <Image 
-            loader={imageLoader}
-            src = 'https://www.tata.com/content/dam/tata/images/footer/video.svg'
-            alt="image not found"
-            width = {'62%'}
-            height = '30%'
+            <Image
+              loader={imageLoader}
+              src="https://www.tata.com/content/dam/tata/images/footer/video.svg"
+              alt="image not found"
+              width={"62%"}
+              height="30%"
             />
-            <Image 
-            loader={imageLoader}
-            src = 'https://www.tata.com/content/dam/tata/images/footer/Instagram.svg'
-            alt="image not found"
-            width = {'65%'}
-            height = '30%'
+            <Image
+              loader={imageLoader}
+              src="https://www.tata.com/content/dam/tata/images/footer/Instagram.svg"
+              alt="image not found"
+              width={"65%"}
+              height="30%"
             />
           </Item>
         </Grid>

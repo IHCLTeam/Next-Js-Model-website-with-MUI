@@ -25,10 +25,10 @@ function NavBar() {
         <Typography>
           <Image
             loader={imageLoader}
-            src="https://s26352.pcdn.co/wp-content/themes/tt2/assets/images/logo-tt-full.svg"
+            src="https://us.123rf.com/450wm/sitiardi21/sitiardi211701/sitiardi21170100013/70276178-hotel-reflection-logo.jpg?ver=6"
             alt="Picture of the author"
-            width={180}
-            height={38}
+            width={90}
+            height={70}
           />
         </Typography>
 
