@@ -26,14 +26,15 @@ function Footer() {
       <Grid></Grid>
       <Grid container spacing={2} sx={{ borderTop: 1, color: "white" }}>
         <Grid item xs={8}>
-          <Item sx={{ boxShadow: "none" }}>
-            <Image
+          <Item sx={{ boxShadow: "none",fontFamily : 'serif',color :'white',fontSize :'150%',px : '2%' }}>
+            {/* <Image
               loader={imageLoader}
               src="https://us.123rf.com/450wm/sitiardi21/sitiardi211701/sitiardi21170100013/70276178-hotel-reflection-logo.jpg?ver=6"
               alt="Picture of the author"
               width={90}
               height={60}
-            />
+            /> */}
+            Contact us --
           </Item>
         </Grid>
         <Grid container spacing={0} item xs={4}>
@@ -158,7 +159,7 @@ function Footer() {
               boxShadow: "none",
               textAlign: "center",
               color: "white",
-              paddingRight: "58%",
+              paddingRight: "30%",
             }}
           >
             Cookie Policy
